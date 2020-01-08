@@ -157,7 +157,7 @@ code:
 reward:
   enable: true
   title: 你的赏识是我前进的动力
-  wechat: /medias/reward/qr_wecatpay.png
+  wechat: /medias/reward/qr_wechatpay.png
   alipay: /medias/reward/qr_alipay.jpg
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
