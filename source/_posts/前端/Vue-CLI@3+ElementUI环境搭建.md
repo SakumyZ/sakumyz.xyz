@@ -1,4 +1,15 @@
-# 工地桩机项目前端环境搭建
+---
+title: Markdown常用语法简介.md
+date: 2020-01-20
+author: SakumyZ
+cover: true
+categories: 前端
+tags:
+  - Vue,
+  - ElementUI
+---
+
+# Vue-CLI@3+ElementUI 环境搭建
 
 ## Node.js
 
