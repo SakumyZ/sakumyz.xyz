@@ -319,5 +319,5 @@ server.listen(8080, () => {
 });
 ```
 
-![1551621092991](imgs/1551621092991.png)
+![1551621092991](http://sakumyz.xyz/static/images/1551621092991.png)
 
