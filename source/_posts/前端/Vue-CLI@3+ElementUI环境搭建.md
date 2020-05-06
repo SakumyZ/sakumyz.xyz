@@ -5,7 +5,7 @@ author: SakumyZ
 cover: true
 categories: 前端
 tags:
-  - Vue,
+  - Vue
   - ElementUI
 ---
 
