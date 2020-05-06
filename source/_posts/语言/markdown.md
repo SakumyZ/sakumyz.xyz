@@ -1,5 +1,5 @@
 ---
-title: Markdown常用语法简介.md
+title: Markdown常用语法简介
 date: 2018-05-12
 author: SakumyZ
 img: http://sakumyz.xyz/static/images/markdown.png

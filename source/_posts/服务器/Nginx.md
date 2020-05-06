@@ -1,6 +1,6 @@
 ---
-title: Nginx安装配置（Ubuntu）.md
-date: 2020-04-15
+title: Nginx安装配置（Ubuntu）
+date: 2019-04-15
 author: SakumyZ
 cover: true
 categories: 前端

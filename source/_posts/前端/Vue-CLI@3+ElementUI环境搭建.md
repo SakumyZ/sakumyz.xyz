@@ -1,5 +1,5 @@
 ---
-title: Vue-CLI@3+ElementUI环境搭建.md
+title: Vue-CLI@3+ElementUI环境搭建
 date: 2020-01-20
 author: SakumyZ
 cover: true
