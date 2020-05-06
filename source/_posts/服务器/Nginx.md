@@ -4,7 +4,7 @@ date: 2019-04-15
 author: SakumyZ
 cover: true
 categories: 前端
-tags: JavaScript
+tags: Nginx
 ---
 
 # Nginx
