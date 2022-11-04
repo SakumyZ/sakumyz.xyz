@@ -2,7 +2,6 @@
 title: Nginx安装配置（Ubuntu）
 date: 2019-04-15
 author: SakumyZ
-cover: true
 categories: Linux
 tags: Nginx
 ---
@@ -13,7 +12,7 @@ tags: Nginx
 
 进入 `nginx` 下载页 http://nginx.org/en/download.html
 
-选择稳定版（Stable version），右键复制链接地址，以备后用（博主本次下载版本为1.14.2）
+选择稳定版（Stable version），右键复制链接地址，以备后用（博主本次下载版本为 1.14.2）
 
 然后在终端中进行一下操作
 
@@ -25,7 +24,7 @@ wget http://nginx.org/download/nginx-1.14.2.tar.gz
 tar -zxvf nginx-1.14.2.tar.gz
 ```
 
-安装**依赖包pcre**
+安装**依赖包 pcre**
 
 ```shell
 sudo apt-get install libpcre3 libpcre3-dev
@@ -61,13 +60,13 @@ sudo make && make install
 
 ## 3. 启动
 
-至此，nginx已经完全编译，在`/usr/local`下你就可以看到一个`nginx`文件夹,运行它便可以启动nginx服务器
+至此，nginx 已经完全编译，在`/usr/local`下你就可以看到一个`nginx`文件夹,运行它便可以启动 nginx 服务器
 
 ```shell
 sudo ./usr/local/nginx/sbin/nginx
 ```
 
-出现以下情况说明80端口已经被占用，需要手动解除占用
+出现以下情况说明 80 端口已经被占用，需要手动解除占用
 
 ![1551601586061](http://sakumyz.xyz/static/images/1551601586061.png)
 
@@ -79,34 +78,30 @@ sudo netstat -antp
 
 ![1551602135039](imgs/1551602135039.png)
 
-上面图中，是我已经启动过了nginx所以，自然被nginx占用了80端口，如果是其他应用，则需将进程杀死，例如上面，我们已知进程号是25255，则需要
+上面图中，是我已经启动过了 nginx 所以，自然被 nginx 占用了 80 端口，如果是其他应用，则需将进程杀死，例如上面，我们已知进程号是 25255，则需要
 
 ```shell
 kill -9 25255
 ```
 
-
-
 ### 3.1 欢迎界面
 
-解除占用后，输入域名，就能看到Nginx的欢迎界面
+解除占用后，输入域名，就能看到 Nginx 的欢迎界面
 
 ![1551601688227](imgs/1551601688227.png)
 
-## 4. Nginx信号
+## 4. Nginx 信号
 
-> Nginx信号控制表
+> Nginx 信号控制表
 
-| 信号      | 说明                                                         |
-| --------- | ------------------------------------------------------------ |
-| TERM, INT | 立即停止进程                                                 |
-| QUIT      | 等待进程结束后再结束进程                                     |
-| HUP       | 平滑地重读配置文件(开启一个新的worker进程读取配置文件，然后再关闭旧进程) |
-| USR1      | 重读日志，分割日志时使用                                     |
-| USR2      | 平滑地升级Nginx                                              |
-| WINCH     | 等待进程结束后关闭旧进程(配合USR2来进行升级)                 |
-
-
+| 信号      | 说明                                                                       |
+| --------- | -------------------------------------------------------------------------- |
+| TERM, INT | 立即停止进程                                                               |
+| QUIT      | 等待进程结束后再结束进程                                                   |
+| HUP       | 平滑地重读配置文件(开启一个新的 worker 进程读取配置文件，然后再关闭旧进程) |
+| USR1      | 重读日志，分割日志时使用                                                   |
+| USR2      | 平滑地升级 Nginx                                                           |
+| WINCH     | 等待进程结束后关闭旧进程(配合 USR2 来进行升级)                             |
 
 ## 5. 命令控制
 
@@ -158,7 +153,7 @@ http {
     keepalive_timeout  65;
 
     #gzip  on;
-		
+
 	# 虚拟主机段
     server {
         listen       80;	#监听端口
@@ -242,14 +237,12 @@ http {
     #    }
     #}
 
-}                                         
+}
 ```
-
-
 
 ### 6.2 配置虚拟主机
 
-需要在配置文件的server段中配置，配置方法很简单，主要有基于域名，IP以及端口的配置，其实基本上没有区别
+需要在配置文件的 server 段中配置，配置方法很简单，主要有基于域名，IP 以及端口的配置，其实基本上没有区别
 
 ```
  server {
@@ -266,19 +259,17 @@ http {
         }
 ```
 
-
-
 ### 6.3 日志管理
 
-Nginx可以允许针对不同的网站启用不同的logs，方便管理
+Nginx 可以允许针对不同的网站启用不同的 logs，方便管理
 
-在server段加上`access_log  logs/xxx.log  main;`,建议日志名字起网站域名，方便识别。
+在 server 段加上`access_log logs/xxx.log main;`,建议日志名字起网站域名，方便识别。
 
-此时测试配置文件时可以会报错，无法识别main格式，是因为配置文件中关于main格式的地方被注释掉了，开启就好，大概位于配置文件20行左右
+此时测试配置文件时可以会报错，无法识别 main 格式，是因为配置文件中关于 main 格式的地方被注释掉了，开启就好，大概位于配置文件 20 行左右
 
 ### 6.4 反向代理
 
-本文通过nginx反向代理node,以示实验
+本文通过 nginx 反向代理 node,以示实验
 
 ```
     server {
@@ -289,35 +280,32 @@ Nginx可以允许针对不同的网站启用不同的logs，方便管理
 
         #access_log  logs/host.access.log  main;
 
-        location / {	
-            root   html;	
+        location / {
+            root   html;
             index  index.html index.htm;
         }
-        
-         location / {	
+
+         location / {
             proxy_pass http://127.0.0.1:8080;
         }
 ```
 
-这意味着当有请求路径为“/api”时，nginx 会将请求代理到服务器的8080端口去*（即node监听的端口）*。我们可以看到主要是要配置` proxy_pass http://127.0.0.1:8080;`
+这意味着当有请求路径为“/api”时，nginx 会将请求代理到服务器的 8080 端口去*（即 node 监听的端口）*。我们可以看到主要是要配置` proxy_pass http://127.0.0.1:8080;`
 
-
-
-这时候运行我们提前写好的node测试代码
+这时候运行我们提前写好的 node 测试代码
 
 ```js
-const http = require('http');
+const http = require('http')
 
 const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-res.setHeader('Content-Type', 'text/plain');
-res.end('Hello Nginx\n');
-});
+  res.statusCode = 200
+  res.setHeader('Content-Type', 'text/plain')
+  res.end('Hello Nginx\n')
+})
 
 server.listen(8080, () => {
-    console.log(`server has been launched/`);
-});
+  console.log(`server has been launched/`)
+})
 ```
 
 ![1551621092991](http://sakumyz.xyz/static/images/1551621092991.png)
-

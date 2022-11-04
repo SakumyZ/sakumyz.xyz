@@ -3,8 +3,7 @@ title: Markdown常用语法简介
 date: 2018-05-12
 author: SakumyZ
 img: http://sakumyz.xyz/static/images/markdown.png
-cover: true
-categories: 语言
+categories: Others
 tags: Markdown
 ---
 
