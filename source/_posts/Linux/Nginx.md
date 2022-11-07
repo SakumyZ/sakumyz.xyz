@@ -2,6 +2,7 @@
 title: Nginx安装配置（Ubuntu）
 date: 2019-04-15
 author: SakumyZ
+img: https://tse1-mm.cn.bing.net/th/id/OIP-C.17t0ZrA27MIJWhrH4eCdbAHaCf?pid=ImgDet&rs=1
 categories: Linux
 tags: Nginx
 ---

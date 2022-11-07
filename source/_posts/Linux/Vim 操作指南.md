@@ -2,6 +2,7 @@
 title: Vim 操作指南
 date: 2022-11-02
 author: SakumyZ
+img: https://www.freecodecamp.org/news/content/images/size/w2000/2020/06/markus-winkler-afW1hht0NSs-unsplash--1-.jpg
 categories: Linux
 tags:
   - Linux

@@ -2,6 +2,7 @@
 title: Git 操作指南
 date: 2022-11-02
 author: SakumyZ
+img: https://www.freecodecamp.org/news/content/images/size/w300/2021/10/github-on-the-hunt-for-a-new-diversity-lead-developers-techworld-github-universe-png-800_450.png
 categories: Git
 tags: Git
 ---

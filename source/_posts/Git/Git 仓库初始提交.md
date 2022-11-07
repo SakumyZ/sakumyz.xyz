@@ -2,6 +2,7 @@
 title: Git 仓库初始提交
 date: 2022-11-02
 author: SakumyZ
+img: https://www.freecodecamp.org/news/content/images/size/w2000/2022/07/git-github.png
 categories: Git
 tags: Git
 ---

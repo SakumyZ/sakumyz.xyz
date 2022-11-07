@@ -2,7 +2,7 @@
 title: Markdown常用语法简介
 date: 2018-05-12
 author: SakumyZ
-img: http://sakumyz.xyz/static/images/markdown.png
+img: https://www.freecodecamp.org/news/content/images/size/w2000/2022/08/Markdown-cheatsheet.png
 categories: Others
 tags: Markdown
 ---

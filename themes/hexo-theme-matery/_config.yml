@@ -114,19 +114,6 @@ recommend:
 favicon: /favicon.png
 logo: /medias/logo.png
 
-highlight:
-  enable: false
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
-prismjs:
-  enable: true
-  preprocess: true
-  line_number: true
-  tab_replace: ''
-
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
 # 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
@@ -523,6 +510,6 @@ banner:
 
 #ICP备案信息尾部显示
 icp:
-  enable: true
+  enable: false
   url: http://beian.miit.gov.cn/publish/query/indexFirst.action # 备案链接
   text: 鄂ICP备19001329号-1 # 备案信息

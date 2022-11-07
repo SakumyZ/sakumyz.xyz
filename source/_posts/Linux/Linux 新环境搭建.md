@@ -2,6 +2,7 @@
 title: Linux 新环境搭建
 date: 2022-11-02
 author: SakumyZ
+img: https://www.freecodecamp.org/news/content/images/size/w300/2022/02/gabriel-heinzer-4Mw7nkQDByk-unsplash.jpg
 categories: Linux
 tags: Linux
 ---
