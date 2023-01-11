@@ -1,7 +1,7 @@
 ---
 date: 2022-04-03
 author: SakumyZ
-categories: Vue
+categories: Obsidian
 img: https://images-1257722820.cos.ap-guangzhou.myqcloud.com/20221108001817.png
 tags: Obsidian
 ---
