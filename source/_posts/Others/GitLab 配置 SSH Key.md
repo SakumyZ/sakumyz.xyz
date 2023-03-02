@@ -35,11 +35,11 @@ Profile Settings --> SSH Keys (英文)
 
 将刚才复制好的密钥粘贴在下图位置中
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/8439628/1634388230261-642c8a97-3e87-4046-9e72-4e65fd968e27.png)
+![添加SSH](https://images-1257722820.cos.ap-guangzhou.myqcloud.com/gitlab-ssh-1.png)
 
 添加完 SSH Key 之后，以后 clone 项目或者是切换仓库地址时，应当使用 SSH 的形式进行 clone
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/8439628/1634388544097-7bc52890-0ab5-4156-b835-03f2711a5fb8.png)
+![以SSH的方式进行clone](https://images-1257722820.cos.ap-guangzhou.myqcloud.com/gitlab-ssh-2.png)
 
 ## 注意
 
